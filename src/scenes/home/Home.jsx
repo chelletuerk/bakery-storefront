@@ -1,6 +1,9 @@
-const Home = () => {
+import MainCarousel from './MainCarousel'
 
-  return <div>Home</div>
+const Home = () => {
+  return <div classname='home'>
+    <MainCarousel />
+  </div>
 }
 
 export default Home
