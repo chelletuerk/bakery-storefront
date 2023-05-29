@@ -59,7 +59,7 @@ function Footer() {
             Contact Us
           </Typography>
           <Typography mb='30px'>
-            101 East Cleveland St, Sundance, WY 82729
+            East Cleveland St, Sundance, WY 82729
           </Typography>
           <Typography mb='30px' sx={{ wordWrap: 'break-word' }}>
             Email: michelletuerk@gmail.com

@@ -16,7 +16,7 @@ const ItemDetails = () => {
   const { itemId } = useParams()
   const [value, setValue] = useState('description')
   const [count, setCount] = useState(1)
-  const [item, setItem] = useState([])
+  const [item, setItem] = useState(null)
   const [items, setItems] = useState([])
 
   const handleChange = (event, newValue) => {
@@ -60,7 +60,7 @@ const ItemDetails = () => {
             alt={item?.name}
             width='100%'
             height='100%'
-            src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.thumbnail?.url}`}
             style={{ objectFit: 'contain' }}
           />
         </Box>
