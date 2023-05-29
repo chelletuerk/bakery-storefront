@@ -62,7 +62,7 @@ function Footer() {
             East Cleveland St, Sundance, WY 82729
           </Typography>
           <Typography mb='30px' sx={{ wordWrap: 'break-word' }}>
-            Email: michelletuerk@gmail.com
+            Email: michelle@gmail.com
           </Typography>
           <Typography mb='30px'>(222)333-4444</Typography>
         </Box>
