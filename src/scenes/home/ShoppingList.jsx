@@ -17,17 +17,20 @@ const ShoppingList = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue)
   }
-  console.log(items)
-  console.log(items.length)
+
 
   async function getItems() {
     const items = await fetch(
-      'http://localhost:1337/api/items?populate=*',
+      // 'http://localhost:1337/api/items?populate=image',
+      'http://localhost:1337/api/items?populate[image][populate]=*',
       { method: 'GET' }
     )
     const itemsJson = await items.json()
     dispatch(setItems(itemsJson.data))
+    console.log('items', items)
+    console.log('item length', items.length)
   }
+
 
   useEffect(() => {
     getItems()

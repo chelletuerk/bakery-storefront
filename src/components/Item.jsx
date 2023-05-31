@@ -26,7 +26,6 @@ const Item = ({ item, width }) => {
       },
     },
   } = image
-  console.log('ITEMMM' , item)
 
   return (
     <Box width={width}>
