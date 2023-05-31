@@ -18,10 +18,11 @@ const ShoppingList = () => {
     setValue(newValue)
   }
   console.log(items)
+  console.log(items.length)
 
   async function getItems() {
     const items = await fetch(
-      'http://localhost:1337/api/items?populate=image',
+      'http://localhost:1337/api/items?populate=*',
       { method: 'GET' }
     )
     const itemsJson = await items.json()

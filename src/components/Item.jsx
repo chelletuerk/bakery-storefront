@@ -26,6 +26,7 @@ const Item = ({ item, width }) => {
       },
     },
   } = image
+  console.log('ITEMMM' , item)
 
   return (
     <Box width={width}>
@@ -43,7 +44,7 @@ const Item = ({ item, width }) => {
           style={{ cursor: "pointer" }}
         />
         <Box
-          display={isHovered ? "block" : "block"}
+          display={isHovered ? "block" : "none"}
           position="absolute"
           bottom="10%"
           left="0"
