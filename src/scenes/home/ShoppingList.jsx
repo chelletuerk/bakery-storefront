@@ -12,7 +12,7 @@ const ShoppingList = () => {
   const dispatch = useDispatch()
   const [value, setValue] = useState('all')
   const items = useSelector((state) => state.cart.items)
-  const breakPoint = useMediaQuery('(min-width:600px)')
+  // const breakPoint = useMediaQuery('(min-width:600px)')
 
   const handleChange = (event, newValue) => {
     setValue(newValue)
@@ -53,7 +53,7 @@ const ShoppingList = () => {
         value={value}
         onChange={handleChange}
         centered
-        TabIndicatorProps={{ sx: { display: breakPoint ? 'block' : 'none' } }}
+        // TabIndicatorProps={{ sx: { display: breakPoint ? 'block' : 'none' } }}
         sx={{
           m: '25px',
           '& .MuiTabs-flexContainer': {
