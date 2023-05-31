@@ -53,7 +53,7 @@ const ShoppingList = () => {
         value={value}
         onChange={handleChange}
         centered
-        TabIndicatorProps={{ sx: { display: breakPoint ? 'block' : 'none' } }}
+        TabIndicatorProps={{ sx: { display: breakPoint ? 'block' : 'block' } }}
         sx={{
           m: '25px',
           '& .MuiTabs-flexContainer': {
